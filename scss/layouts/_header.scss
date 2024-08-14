@@ -1,0 +1,40 @@
+.top-header {
+    time {
+        font-size: 15px;
+        color: #1B1B1C;
+        font-weight: 500;
+    }
+}
+
+.navigation-bar {
+    background-color: $primary-color;
+    color: white;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        nav {
+            flex: 1;
+
+            ul {
+                display: flex;
+                gap: 30px;
+            }
+        }
+
+        .side-menu-open-btn {
+            color: white;
+            font-size: 24px;
+        }
+
+        .serch-btn {
+            height: 30px;
+            width: 30px;
+            background-color: white;
+            color: $primary-color;
+            border-radius: 50%;
+        }
+    }
+}

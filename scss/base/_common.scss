@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Mukta", sans-serif;
+}
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+ul{
+    list-style: none;
+    margin-bottom: 0px !important;
+    li{
+        display: inline-block;
+    }
+}
+
+
+h1, h2, h3, h4, h5, h6{
+    margin-bottom: 0px !important;
+}
+figure{
+    overflow: hidden;
+    margin-bottom: 0px !important;
+}
+
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+}
+
+.margin-top{
+    margin-top: 80px;
+}
+
+.news-headline-wrapper{
+    .category{
+        border-bottom: 1px solid $primary-color;
+        margin-bottom: 10px;
+        span{
+            background-color: $primary-color;
+            color: white;
+            padding: 10px 20px;
+            margin: 0px auto;
+            display: block;
+            width: fit-content;
+        }
+    }
+    .news-headline{
+        text-align: center;
+        font-size: 50px !important;
+        font-weight: 600;
+        line-height: 60px;
+        color: #020202;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+    .author-details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        figure{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+    }
+    .news-thumbnail{
+        margin-top: 20px;
+        max-height: 600px;
+        img{
+            transition: 0.5s;
+            &:hover{
+                scale: 1.2;
+                opacity: 0.8;
+            }
+        }
+    }
+    p{
+        text-align: center;
+        width: 85%;
+        margin: 10px auto 0px;
+        font-size: 21px;
+        color: #020202;
+        @include line-clamp;
+    
+    }
+}
+
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid $primary-color;
+    margin-bottom: 20px;
+    .news-category{
+        background-color: $primary-color;
+        padding: 10px 20px;
+        color: white;
+        width: fit-content;
+        font-size: 18px !important;
+    }
+    a{
+        color: green !important;
+    }
+}
