@@ -1,52 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bittyapost | Home</title>
-    <link rel="shortcut icon" href="images/fevicon.png" type="image/x-icon" />
-    <!-- custome css  -->
-    <link rel="stylesheet" href="css/style.css" />
-    <!-- bootstrap css  -->
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-  </head>
-  <body>
-    <header>
-      <div class="top-header container my-3">
-        <div class="row gy-4 align-items-center">
-          <div class="col-lg-3 col-12">
-            <a href="index.html">
-              <img src="images/logo.png" alt="Bittyapost" />
-            </a>
-            <time datetime="">आइतबार २९ जेठ, २०७९ Sunday, 12 June, 2022</time>
-          </div>
-          <div class="col-lg-9 col-12">
-            <a href="">
-              <img src="images/ads-4.gif" alt="" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="navigation-bar py-3">
-        <div class="container">
-          <button class="side-menu-open-btn"><i class="bi bi-list"></i></button>
-          <nav>
-            <ul>
-              <li><a href="">चर्चामा</a></li>
-              <li><a href=""> बैंक</a></li>
-              <li><a href="">लघुवित्त</a></li>
-              <li><a href="">बीमा</a></li>
-              <li><a href="">सुन</a></li>
-              <li><a href=""> शेयर</a></li>
-            </ul>
-          </nav>
-          <button class="serch-btn"><i class="bi bi-search"></i></button>
-        </div>
-      </div>
-    </header>
+<?php include("includes/header.php");?>
+
     <section class="ads-section my-5">
       <div class="container">
-        <a href="">
+        <a href="" target="_blank">
           <img src="images/ads-3.gif" alt="" />
         </a>
       </div>
@@ -55,7 +11,7 @@
     <section class="news-headline-wrapper container">
       <div class="category"><span>शेयर बजार</span></div>
       <h2 class="news-headline">
-        <a href=""
+        <a href="news-details.php"
           >खप्तड लघुवित्त र सिक्लेस हाइड्रोपावरको सेयर आगामी साताभित्रै
           कारोबारमा आउन सक्ने</a
         >
@@ -612,7 +568,6 @@
         </a>
       </div>
     </section>
-    <!-- bootstrap js  -->
-    <script src="js/bootstrap.min.js"></script>
-  </body>
-</html>
+
+
+<?php include("includes/footer.php");?>
